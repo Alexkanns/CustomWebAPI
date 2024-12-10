@@ -72,6 +72,7 @@ def main(req: HttpRequest) -> HttpResponse:
             response_values.append({
                 "recordId": record_id,
                 "data": {
+                    # "embedding": embedding    -> same issue
                     "embedding": embedding_float32
                 },
                 "errors": [],
